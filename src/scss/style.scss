@@ -34,6 +34,31 @@
 // @import 'layout/header';
 // @import 'layout/footer';
 
+details {
+  display: inline-block;
+  border: $border;
+  border-radius: 15px;
+  padding: 10px 10px 0;
+  li {
+    color: #666;
+  }
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
 .video-widget {
   &__container {
 
@@ -137,7 +162,7 @@ header.fixed {
     margin-bottom: 36px;
     div {
       margin-top: 12px;
-      font-size: 35px;
+      font-size: 32px;
       line-height: normal;
       display: inline-block;
       background-color: $blackColor;
